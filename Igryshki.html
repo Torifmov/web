@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Soft pool igryshki</title>
+        <style>
+            body, h2, p{
+                margin:0;
+                padding:0;
+            }
+            body{
+                font-size: 18px;
+            }
+            #header{ 
+                background-color: #eee;
+                border-bottom: 1px solid #ccc;
+                height: 60px;
+                text-align: center;
+            }
+            #wrapper{
+                background-color: #ddd;
+            }
+            #menu{
+                float: left;
+                width: 150px;
+            }
+            #main{
+                background-color: #f7f7f7;
+                border-left: 1px solid #ccc;
+                margin-left: 0px;
+                padding: 10px;
+            }
+            #footer{ 
+                border-top: 1px solid #ccc;
+                background-color: #dedede;
+            }
+ul.nav{
+                margin-left: 0px;
+                padding-left: 0px;
+                list-style: none;
+            }
+            .nav li { 
+                display: inline; 
+            }
+            ul.nav a {
+                display: inline-block;
+                width: 7em;
+                padding:10px;
+                background-color: #f4f4f4;
+                border-top: 1px solid #333;
+                border-right: 1px solid #333;
+                border-left: 1px solid #333;
+                text-decoration: none;
+                color: #333;
+            }
+            ul.nav a:hover{
+                background-color: #333;
+                color: #f4f4f4;
+            }
+            ul.nav li:last-child a {
+                border-bottom: 1px dashed #333;
+            }
+            *{
+                box-sizing: border-box;
+            }
+            html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, 
+            ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header{
+                 
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                vertical-align: baseline;
+            }
+            #header{
+                background-color: #eee;
+            }
+            #header h1{
+                font-size: 1.3em;
+                padding: 15px;
+            }
+            #nav{
+                background-color: #f4f4f4;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+            }
+            #nav ul{
+                margin-left: 0px;
+                padding-left: 0px;
+                list-style: none;
+            }
+            #nav li { 
+                float: left;
+            }
+            #nav ul a {
+                display: block;
+                width: 7em;
+                padding: 10px;
+                border-left: 1px solid #ccc;
+                text-decoration: none;
+                color: #333;
+                text-align: center;
+            }
+            #nav ul li:last-child a {
+                border-right: 1px solid #ccc;
+            }
+            #nav ul a:hover{
+                background-color: #aaa;
+                color: #f4f4f4;
+            }
+            #nav ul:after {
+                content: " ";
+                display: table;
+                clear: both;
+            }
+            #content{
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Soft pool</h1></div>
+            <ul class="nav">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Игрушки</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">О нас</a></li>
+                </ul>
+            </div>
+            <div id="main">
+        <img src="data:image/jpeg;base64,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" />
+        <img src="https://www.toys-land.ru/img/goods/small/lk24-117-1.jpg" />
+        <img src="https://ke-images.servicecdn.ru/c908inneomda25o5uhe0/original.jpg" />
+        <img src="hhttps://avatars.mds.yandex.net/get-mpic/5332113/img_id3013579382489003488.jpeg/orig" />
+        <img src="https://www.i-igrushki.ru/upload/iblock/0d7/0d7c7ac399ca874b6a4c681f6d891424.jpg" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIclpTuLYHPhodCEAARJx62XLI1jnABsAZEw&usqp=CAU" />
+        <img src="https://main-cdn.sbermegamarket.ru/mid9/hlr-system/108/675/159/272/020/42/600004048572b0.jpeg" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhMoTm0aj-wuwDIMZk-h3yFuH-fOdNuszzCw&usqp=CAU" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEqJSgXDXT4RWeHns_ieXE0iwWUfa6A-DGIQ&usqp=CAU" />
+        <img src="https://novosibirsk.sidex.ru/images_offers/3960/3960511/myagkaya_igryshka_ikea_akyla_blohei_100_sm_1.jpg" />
+            </div>
+        </div>
+        <div id="footer">
+            <p>© Softpool.ru, 2023</p>
+        </div>
+    </body>
+</html>
